@@ -11,35 +11,30 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Civil and Systems Engineering, 2031 (expected)
+* B.S.E in Materials Science Engineering, University of Pennsylvania, 2026
+* B.A. in Physics, University of Pennsylvania, 2026
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2026: Teaching Assistant
+  * University of Pennyslvania; Wharton Moneyball San Francisco
+  * Taught statistics, sports analytics, and coding concepts to high schoolers at 2 week program
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2026: Research Assistant
+  * University of Pennsylvania; Wharton Sports Analytics Lab
+  * Learned advanced statistics and probability concepts, applied to sports analytics through problem sets in R and collaborative research project culminating in conference poster and manuscript submission
+  * Served as assistant instructor for Wharton Moneyball 
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Summer 2024: Research Assistant
+  * North Carolina State University; Abolhasani Lab
+  * Built cascade neural network architectures in PyTorch to accelerate parameter space mapping of perovskite
+nanocrystals, performed Bayesian optimization with BoTorch for experimental candidate selection 
+
+* Summer 2023-Fall 2025: Research Assistant
+  * University of Pennyslvania; Winey Lab
+  * Employed molecular dynamics simulations to analyze morphology and diffusion of ion-conducting polymers for
+future chemical synthesis
 
 Publications
 ======
@@ -47,11 +42,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
 Teaching
 ======
@@ -59,6 +49,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
