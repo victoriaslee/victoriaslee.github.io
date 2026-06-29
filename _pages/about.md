@@ -13,3 +13,4 @@ I graduated from the VIPER program at the University of Pennsylvania in 2026 wit
 In addition to my research, I am also interested in sports analytics, especially related to the NFL. Outside of work, I enjoy rock climbing, reading, and adding new food spots to my Beli. 
 
 Email: vlee52@jh.edu
+Linkedin: [Victoria Lee](www.linkedin.com/in/victoria-lee-b5283021a)
