@@ -21,7 +21,7 @@ Work experience
   * University of Pennyslvania; Wharton Moneyball San Francisco
   * Taught statistics, sports analytics, and coding concepts to high schoolers at 2 week program
 
-* Summer 2026: Research Assistant
+* Summer 2025: Research Assistant
   * University of Pennsylvania; Wharton Sports Analytics Lab
   * Learned advanced statistics and probability concepts, applied to sports analytics through problem sets in R and collaborative research project culminating in conference poster and manuscript submission
   * Served as assistant instructor for Wharton Moneyball 
