@@ -1,0 +1,19 @@
+---
+title: "A self-driving fluidic lab for data-driven synthesis of lead-free perovskite nanocrystals"
+collection: publications
+category: manuscripts
+permalink: /publications/perovskite-sdl
+date: 2025-04-28
+venue: 'Digital Discovery'
+#slidesurl: ''
+paperurl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fvZ5HV4AAAAJ&citation_for_view=fvZ5HV4AAAAJ:d1gkVwhDpl0C'
+#citation: 'Sadeghi, S., Mattsson, K., Glasheen, J., Lee, V., Stark, C., Jha, P., ... & Abolhasani, M. (2025). A self-driving fluidic lab for data-driven synthesis of lead-free perovskite nanocrystals. Digital Discovery, 4(7), 1722-1733.'
+---
+
+The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+## Abstract
+Copper (Cu)-based metal halide perovskite (MHP) nanocrystals (NCs) have recently gained attention as promising Pb-free and environmentally sustainable alternatives to traditional Pb-based MHPs, offering wide bandgaps, large Stokes shifts, and high emission stability. Despite these advantages, achieving high photoluminescence quantum yields (PLQYs) in Cu-based MHP NCs remains challenging, which impedes their widespread deployment in advanced optoelectronic and energy-related devices. Introducing a metal halide additive in the precursor chemistry can enhance the optical performance of Cu-based MHP NCs, but this approach substantially expands the experimental parameter space, rendering conventional batch-based, trial-and-error methods both time- and resource-intensive. Here, we present a self-driving fluidic lab (SDFL) that combines a modular microfluidic reactor, real-time in situ characterization, and machine-learning-guided decision-making to autonomously explore and optimize high-dimensional Cu-based MHP NC syntheses in the presence of a metal halide additive. Leveraging droplet-based flow chemistry and ensemble neural network-enabled Bayesian optimization, our SDFL rapidly navigates complex precursor formulations and reaction conditions of Cu-based MHP NCs, thus minimizing waste and accelerating discovery. We utilize the SDFL with three distinct precursor chemistries to synthesize Cs3Cu2I5 NCs, with zinc iodide (ZnI2) serving as the metal halide additive. The high-fidelity data generated in situ allow for the creation of predictive digital twin models that yield mechanistic insights into additive-assisted NC formation. By iteratively refining synthesis parameters within the SDFL, we achieve Cs3Cu2I5 NCs with post-purification PLQYs of approximately 61%, marking a significant improvement over conventional Cu-based MHP NCs. The resulting high-performance, Pb-free NCs underscore the potential of sustainable materials acceleration platforms to speed-up the development of next-generation photonic and energy technologies.
+
+
+
