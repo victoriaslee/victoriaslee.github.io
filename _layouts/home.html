@@ -3,61 +3,92 @@ layout: default
 ---
 
 {% include base_path %}
+{% assign recent_publications = site.publications | sort: "date" | reverse %}
 
-<main class="home" role="main">
-  <section class="home-hero" aria-labelledby="home-title">
-    <div class="home-hero__content">
-      <p class="home-eyebrow">PhD Student · Johns Hopkins University</p>
-      <h1 id="home-title">Victoria Lee</h1>
-      <p class="home-intro">
-        I study how scientific machine learning and uncertainty quantification
-        can make materials and engineering systems more reliable.
-      </p>
-      <div class="home-actions">
-        <a class="button button--primary" href="{{ base_path }}/publications/">View publications</a>
-        <a class="button button--secondary" href="{{ base_path }}/cv/">View CV</a>
-      </div>
-    </div>
-
-    <aside class="home-profile" aria-label="Profile">
-      <div class="home-profile__image">
+<main class="home-index" role="main">
+  <header class="index-intro">
+    <div class="index-intro__identity">
+      <div class="index-portrait">
         <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ site.author.name }}">
       </div>
-      <div class="home-profile__details">
-        <p>{{ site.author.bio }}</p>
-        <span>{{ site.author.location }}</span>
+      <div>
+        <p class="index-kicker">Victoria Lee</p>
+        <p class="index-role">PhD student at Johns Hopkins University</p>
       </div>
-    </aside>
-  </section>
+    </div>
 
-  <section class="home-grid">
-    <article class="home-card home-card--about">
-      <p class="home-card__label">About</p>
-      <div class="home-card__content">
+    <div class="index-intro__statement">
+      <h1 id="home-title">Researching reliable methods for complex engineering systems.</h1>
+      <p>
+        Scientific machine learning, uncertainty quantification, and materials
+        science—with an additional interest in sports analytics.
+      </p>
+    </div>
+  </header>
+
+  <div class="index-sections">
+    <section class="index-section" aria-labelledby="about-heading">
+      <p class="index-section__number">01</p>
+      <h2 id="about-heading">About</h2>
+      <div class="index-section__body index-prose">
         {{ content }}
       </div>
-    </article>
+    </section>
 
-    <aside class="home-card home-card--focus">
-      <p class="home-card__label">Research focus</p>
-      <ul class="focus-list">
-        <li>Scientific machine learning</li>
-        <li>Uncertainty quantification</li>
-        <li>Materials science</li>
-        <li>Sports analytics</li>
-      </ul>
-    </aside>
-  </section>
+    <section class="index-section" aria-labelledby="focus-heading">
+      <p class="index-section__number">02</p>
+      <h2 id="focus-heading">Focus</h2>
+      <div class="index-section__body">
+        <ul class="index-topics">
+          <li><span>Scientific ML</span><small>Data-informed physical models</small></li>
+          <li><span>Uncertainty</span><small>Quantification and reliability</small></li>
+          <li><span>Materials</span><small>Structure, transport, and simulation</small></li>
+          <li><span>Sports analytics</span><small>Player evaluation and modeling</small></li>
+        </ul>
+      </div>
+    </section>
 
-  <section class="home-contact" aria-labelledby="contact-title">
+    <section class="index-section" aria-labelledby="work-heading">
+      <p class="index-section__number">03</p>
+      <h2 id="work-heading">Selected work</h2>
+      <div class="index-section__body">
+        <ol class="index-work">
+          {% for publication in recent_publications limit: 3 %}
+            <li>
+              <a href="{{ base_path }}{{ publication.url }}">
+                <span>{{ publication.title }}</span>
+                <small>{{ publication.venue }} · {{ publication.date | date: "%Y" }}</small>
+              </a>
+            </li>
+          {% endfor %}
+        </ol>
+        <a class="index-text-link" href="{{ base_path }}/publications/">All publications <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="index-section" aria-labelledby="writing-heading">
+      <p class="index-section__number">04</p>
+      <h2 id="writing-heading">Writing</h2>
+      <div class="index-section__body index-writing">
+        {% if site.posts.size > 0 %}
+          {% assign latest_post = site.posts.first %}
+          <p class="index-writing__status">Latest note</p>
+          <a href="{{ base_path }}{{ latest_post.url }}">{{ latest_post.title }}</a>
+        {% else %}
+          <p>Notes on research, statistics, and projects will appear here.</p>
+        {% endif %}
+        <a class="index-text-link" href="{{ base_path }}/year-archive/">Visit the blog <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="index-connect">
+    <p>Open to research conversations and collaborations.</p>
     <div>
-      <p class="home-card__label">Connect</p>
-      <h2 id="contact-title">Interested in my work?</h2>
-    </div>
-    <div class="home-contact__links">
       <a href="mailto:{{ site.author.email }}">Email</a>
-      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Scholar</a>{% endif %}
       {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+      <a href="{{ base_path }}/cv/">CV</a>
     </div>
-  </section>
+  </footer>
 </main>
