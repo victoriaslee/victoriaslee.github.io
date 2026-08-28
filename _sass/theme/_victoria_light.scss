@@ -1,0 +1,62 @@
+/* ==========================================================================
+   VICTORIA THEME - LIGHT VERSION
+   Heritage blue & warm ivory palette
+   ========================================================================== */
+
+$primary-color              : #003087;
+$accent-color               : #c4a052;
+$dark-primary-color         : #001f5c;
+$darker-primary-color       : #001440;
+$light-primary-color        : mix(#fff, $primary-color, 75%);
+$lighter-primary-color      : mix(#fff, $primary-color, 92%);
+
+$background                 : #faf8f5;
+$background-light           : #ffffff;
+$background-lighter         : #f3f0ea;
+$text                       : #1a2744;
+$text-muted                 : #4a5568;
+$link                       : #003087;
+$link-dark                  : #001f5c;
+$link-light                 : #2b5ea8;
+$footer                     : #eef1f7;
+$border                     : #e2ddd4;
+$border-dark                : #c9c2b5;
+
+$danger-color               : #c0392b;
+$info-color                 : #003087;
+$notice-color               : #c4a052;
+$success-color              : #2d6a4f;
+$warning-color              : #b8860b;
+
+$border-radius              : 8px;
+$box-shadow                 : 0 2px 12px rgba(26, 39, 68, 0.08);
+$global-transition          : all 0.25s ease;
+$masthead-height            : 72px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 260px;
+$sidebar-screen-min-width   : 1024px;
+
+$global-font-family         : "Source Serif 4", Georgia, "Times New Roman", serif;
+$header-font-family         : "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$sans-serif-narrow          : $header-font-family;
+
+:root {
+  --global-base-color                 : #{$primary-color};
+  --global-accent-color               : #{$accent-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-dark};
+  --global-code-background-color      : #{$background-lighter};
+  --global-code-text-color            : #{$darker-primary-color};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$lighter-primary-color};
+}

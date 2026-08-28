@@ -1,0 +1,58 @@
+/* ==========================================================================
+   VICTORIA THEME - DARK VERSION
+   ========================================================================== */
+
+$primary-color              : #6b9fd4;
+$accent-color               : #d4b76a;
+$background                 : #0f1520;
+$background-light           : #1a2233;
+$background-lighter         : #243044;
+$text                       : #e8edf5;
+$text-muted                 : #9aa8be;
+$link                       : #7eb3e8;
+$link-dark                  : #a8ccf5;
+$link-light                 : #5a8fc9;
+$footer                     : #0a0e16;
+$border                     : #2a3548;
+$border-light               : #3a4a62;
+
+$danger-color               : #e74c3c;
+$info-color                 : #6b9fd4;
+$notice-color               : #d4b76a;
+$success-color              : #52b788;
+$warning-color              : #f4a261;
+
+$border-radius              : 8px;
+$box-shadow                 : 0 2px 12px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.25s ease;
+$masthead-height            : 72px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 260px;
+$sidebar-screen-min-width   : 1024px;
+
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-accent-color               : #{$accent-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+}
+
+html[data-theme="dark"] {
+  footer {
+    color: #{$text};
+  }
+}

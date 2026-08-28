@@ -1,0 +1,92 @@
+/* ==========================================================================
+   CUSTOM STYLES - Victoria Lee
+   ========================================================================== */
+
+.masthead {
+  backdrop-filter: blur(12px);
+  background: rgba(250, 248, 245, 0.92);
+
+  &::after {
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      var(--global-base-color) 0%,
+      var(--global-accent-color) 50%,
+      var(--global-base-color) 100%
+    );
+  }
+}
+
+html[data-theme="dark"] .masthead {
+  background: rgba(15, 21, 32, 0.92);
+}
+
+.masthead__menu-item.selected a {
+  color: var(--global-base-color);
+  border-bottom-color: var(--global-accent-color);
+}
+
+.masthead__menu-item.selected a:hover {
+  color: var(--global-base-color);
+  border-bottom-color: var(--global-accent-color);
+}
+
+.sidebar {
+  @media screen and (min-width: 1024px) {
+    .author__avatar img {
+      border: 3px solid var(--global-accent-color);
+      box-shadow: $box-shadow;
+      transition: $global-transition;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+
+    .author__name {
+      font-family: $header-font-family;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--global-base-color);
+    }
+  }
+}
+
+.page__content {
+  h1, h2 {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3px;
+      margin-top: 0.4em;
+      background: linear-gradient(90deg, var(--global-base-color), var(--global-accent-color));
+      border-radius: 2px;
+    }
+  }
+}
+
+.archive__item-title a {
+  transition: $global-transition;
+
+  &:hover {
+    color: var(--global-base-color);
+  }
+}
+
+a {
+  transition: $global-transition;
+}
+
+.btn {
+  border-radius: $border-radius;
+  font-family: $header-font-family;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+}
