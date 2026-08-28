@@ -1,57 +1,21 @@
-/* ==========================================================================
-   VICTORIA THEME - DARK
-   Neutral dark mode with lightcoral accent
-   ========================================================================== */
-
-$lightcoral                 : #F08080;
-$coral-hover                : #f59595;
-
-$background                 : #171717;
-$background-light           : #1f1f1f;
-$background-lighter         : #262626;
-$text                       : #e5e5e5;
-$text-muted                 : #a3a3a3;
-$link                       : #e5e5e5;
-$link-dark                  : $coral-hover;
-$link-light                 : #d4d4d4;
-$footer                     : #141414;
-
-$danger-color               : #f87171;
-$info-color                 : #a3a3a3;
-$notice-color               : $lightcoral;
-$success-color              : #4ade80;
-$warning-color              : #fbbf24;
-
-$border-radius              : 4px;
-$box-shadow                 : none;
-$global-transition          : color 0.15s ease, border-color 0.15s ease;
-$masthead-height            : 64px;
-$navicon-width              : 28px;
-$navicon-height             : 4px;
-$sidebar-link-max-width     : 250px;
-$sidebar-screen-min-width   : 1024px;
-
+/* The custom portfolio intentionally uses one consistent light color system. */
 html[data-theme="dark"] {
-  --coral                    : #{$lightcoral};
-  --global-base-color                 : #{$text};
-  --global-accent-color               : #{$lightcoral};
-  --global-bg-color                   : #{$background};
-  --global-footer-bg-color            : #{$footer};
-  --global-border-color               : #2e2e2e;
-  --global-dark-border-color          : #3a3a3a;
-  --global-code-background-color      : #{$background-light};
-  --global-code-text-color            : #{$text-muted};
-  --global-fig-caption-color          : #{$text-muted};
-  --global-link-color                 : #{$link};
-  --global-link-color-hover           : #{$coral-hover};
-  --global-link-color-visited         : #{$link-light};
-  --global-masthead-link-color        : #{$text-muted};
-  --global-masthead-link-color-hover  : #{$text};
-  --global-text-color                 : #{$text};
-  --global-text-color-light           : #{$text-muted};
-  --global-thead-color                : #{$background-lighter};
-}
-
-html[data-theme="dark"] footer {
-  color: #{$text-muted};
+  --coral                              : #F08080;
+  --global-base-color                  : #404040;
+  --global-accent-color                : #F08080;
+  --global-bg-color                    : #ffffff;
+  --global-footer-bg-color             : #f5f5f5;
+  --global-border-color                : #e5e5e5;
+  --global-dark-border-color           : #e5e5e5;
+  --global-code-background-color       : #f5f5f5;
+  --global-code-text-color             : #262626;
+  --global-fig-caption-color           : #737373;
+  --global-link-color                  : #404040;
+  --global-link-color-hover            : #e07070;
+  --global-link-color-visited          : #525252;
+  --global-masthead-link-color         : #525252;
+  --global-masthead-link-color-hover   : #262626;
+  --global-text-color                  : #404040;
+  --global-text-color-light            : #737373;
+  --global-thead-color                 : #f5f5f5;
 }

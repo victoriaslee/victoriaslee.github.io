@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main class="home" role="main">
+  <section class="home-hero" aria-labelledby="home-title">
+    <div class="home-hero__content">
+      <p class="home-eyebrow">PhD Student · Johns Hopkins University</p>
+      <h1 id="home-title">Victoria Lee</h1>
+      <p class="home-intro">
+        I study how scientific machine learning and uncertainty quantification
+        can make materials and engineering systems more reliable.
+      </p>
+      <div class="home-actions">
+        <a class="button button--primary" href="{{ base_path }}/publications/">View publications</a>
+        <a class="button button--secondary" href="{{ base_path }}/cv/">View CV</a>
+      </div>
+    </div>
+
+    <aside class="home-profile" aria-label="Profile">
+      <div class="home-profile__image">
+        <img src="{{ site.author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ site.author.name }}">
+      </div>
+      <div class="home-profile__details">
+        <p>{{ site.author.bio }}</p>
+        <span>{{ site.author.location }}</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="home-grid">
+    <article class="home-card home-card--about">
+      <p class="home-card__label">About</p>
+      <div class="home-card__content">
+        {{ content }}
+      </div>
+    </article>
+
+    <aside class="home-card home-card--focus">
+      <p class="home-card__label">Research focus</p>
+      <ul class="focus-list">
+        <li>Scientific machine learning</li>
+        <li>Uncertainty quantification</li>
+        <li>Materials science</li>
+        <li>Sports analytics</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="home-contact" aria-labelledby="contact-title">
+    <div>
+      <p class="home-card__label">Connect</p>
+      <h2 id="contact-title">Interested in my work?</h2>
+    </div>
+    <div class="home-contact__links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
+      {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+    </div>
+  </section>
+</main>
