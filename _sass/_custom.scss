@@ -6,12 +6,17 @@
 /* ---- Masthead: clean white bar ---- */
 
 .masthead {
-  background: var(--global-bg-color);
+  background: #ffffff !important;
   border-bottom: 1px solid var(--global-border-color);
+  box-shadow: none !important;
 
   &::after {
-    display: none;
+    display: none !important;
   }
+}
+
+html[data-theme="dark"] .masthead {
+  background: var(--global-bg-color) !important;
 }
 
 .masthead__inner-wrap {
@@ -56,6 +61,14 @@
 
 @media screen and (min-width: 1024px) {
   .sidebar {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+    h2, h3, h4, p, li {
+      color: var(--global-text-color-light);
+    }
+
     .author__name {
       font-family: $global-font-family;
       font-weight: 600;
@@ -161,8 +174,16 @@
 
 /* ---- Footer ---- */
 
+.page .page__inner-wrap,
+.archive {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
 .page__footer {
-  background: var(--global-footer-bg-color);
+  background: var(--global-footer-bg-color) !important;
   border-top: 1px solid var(--global-border-color);
   color: var(--global-text-color-light);
 
