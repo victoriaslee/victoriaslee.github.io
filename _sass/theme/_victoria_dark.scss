@@ -1,69 +1,57 @@
 /* ==========================================================================
-   VICTORIA THEME - DARK VERSION
+   VICTORIA THEME - DARK
+   Neutral dark mode with lightcoral accent
    ========================================================================== */
 
-$primary-color              : #a78bfa;
-$accent-color               : #ff8a6b;
-$secondary-color            : #86b5a4;
-$background                 : #0c0a12;
-$background-light           : #16121f;
-$background-lighter         : #211c2e;
-$text                       : #ede9f5;
-$text-muted                 : #9d94b0;
-$link                       : #c4b5fd;
-$link-dark                  : #ff8a6b;
-$link-light                 : #a78bfa;
-$footer                     : #06040a;
-$border                     : #2a2438;
-$border-light               : #3a3248;
+$lightcoral                 : #F08080;
+$coral-hover                : #f59595;
 
-$sidebar-bg                 : linear-gradient(180deg, #16121f 0%, #0c0a12 100%);
-$sidebar-text               : #ede9f5;
-$sidebar-muted              : rgba(237, 233, 245, 0.65);
-$sidebar-accent             : #ff8a6b;
+$background                 : #171717;
+$background-light           : #1f1f1f;
+$background-lighter         : #262626;
+$text                       : #e5e5e5;
+$text-muted                 : #a3a3a3;
+$link                       : #e5e5e5;
+$link-dark                  : $coral-hover;
+$link-light                 : #d4d4d4;
+$footer                     : #141414;
 
 $danger-color               : #f87171;
-$info-color                 : #a78bfa;
-$notice-color               : #ff8a6b;
-$success-color              : #86b5a4;
+$info-color                 : #a3a3a3;
+$notice-color               : $lightcoral;
+$success-color              : #4ade80;
 $warning-color              : #fbbf24;
 
-$border-radius              : 14px;
-$box-shadow                 : 0 8px 32px rgba(0, 0, 0, 0.45);
-$global-transition          : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$border-radius              : 4px;
+$box-shadow                 : none;
+$global-transition          : color 0.15s ease, border-color 0.15s ease;
 $masthead-height            : 64px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
-$sidebar-link-max-width     : 280px;
+$sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
 html[data-theme="dark"] {
-  --global-base-color                 : #{$primary-color};
-  --global-accent-color               : #{$accent-color};
-  --global-secondary-color            : #{$secondary-color};
+  --coral                    : #{$lightcoral};
+  --global-base-color                 : #{$text};
+  --global-accent-color               : #{$lightcoral};
   --global-bg-color                   : #{$background};
   --global-footer-bg-color            : #{$footer};
-  --global-border-color               : #{$border};
-  --global-dark-border-color          : #{$border-light};
+  --global-border-color               : #2e2e2e;
+  --global-dark-border-color          : #3a3a3a;
   --global-code-background-color      : #{$background-light};
   --global-code-text-color            : #{$text-muted};
   --global-fig-caption-color          : #{$text-muted};
   --global-link-color                 : #{$link};
-  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-hover           : #{$coral-hover};
   --global-link-color-visited         : #{$link-light};
-  --global-masthead-link-color        : rgba(255, 255, 255, 0.88);
-  --global-masthead-link-color-hover  : #ffffff;
+  --global-masthead-link-color        : #{$text-muted};
+  --global-masthead-link-color-hover  : #{$text};
   --global-text-color                 : #{$text};
   --global-text-color-light           : #{$text-muted};
   --global-thead-color                : #{$background-lighter};
-  --sidebar-bg                        : #{$sidebar-bg};
-  --sidebar-text                      : #{$sidebar-text};
-  --sidebar-muted                     : #{$sidebar-muted};
-  --sidebar-accent                    : #{$sidebar-accent};
 }
 
-html[data-theme="dark"] {
-  footer {
-    color: #{$text-muted};
-  }
+html[data-theme="dark"] footer {
+  color: #{$text-muted};
 }
